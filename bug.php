@@ -15,7 +15,7 @@ require_once "db.php";
         $attachmentid = rand(1000,10000);
 
 
-        $maximum_size = 50 * 1024 * 1024;
+        $maximum_size = 50 * 1024 ;
         $upload_dir = "uploads";
         if (!file_exists('uploads')) {
             mkdir('uploads', 0777, true);
