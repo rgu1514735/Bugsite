@@ -10,12 +10,12 @@ if(isset($_POST))
 
     $sql = "select * from register_user where username = '$username' and password = '$password'";
 
-    if($result = mysql_query($sql))
+    if($result = mysqli_query($sql))
     {
         session_start();
-        $row = mysql_fetch_array($result);
-        $_SESSION['username'] = $row[2];
-        $_SESSION['userid'] = $row[3];
+        $row = mysqli_fetch_assoc($result);
+        $_SESSION['username'] = $row['username'];
+        $_SESSION['userid'] = $row['userid'];
         header("location: homepage.php");
 
     }
