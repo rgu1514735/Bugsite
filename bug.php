@@ -62,7 +62,7 @@ require_once "db.php";
     }
    else
     {
-        $title = $_POST['title'];
+       /* $title = $_POST['title'];
         $description = $_POST['description'];
         $postdate = $_POST['postdate'];
         $userid = $_SESSION['userid'];
@@ -83,7 +83,7 @@ require_once "db.php";
         else
         {
             echo "there is an non file error";
-        }
+        }*/
      }
 
 
