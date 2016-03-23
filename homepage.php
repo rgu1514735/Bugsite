@@ -36,7 +36,7 @@
     <div id="homecontent">
         <div id="comment">
            <div id="homediv">
-               <form method="post" action="fileupload.php">
+               <form method="post" action="fileupload.php" enctype="multipart/form-data>
                 <table border="0" cellpadding='2' cellspacing='3' style="text-align: center;">
                     <tr>
                         <td><label>Title</label></td>
