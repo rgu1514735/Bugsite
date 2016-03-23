@@ -3,7 +3,7 @@
     session_start();
     if(!isset($_SESSION['username']))
     {
-        echo "not ready";
+        header("Location: index.php");
     }
 else{
     echo "ready";
