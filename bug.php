@@ -3,7 +3,7 @@ session_start();
 require_once "db.php";
 
 
-    if(isset($_POST['doc'])) {
+    if($_POST['document']) {
         $title = $_POST['title'];
         $description = $_POST['description'];
         $postdate = $_POST['postdate'];
@@ -20,7 +20,7 @@ require_once "db.php";
         if (!file_exists('uploads')) {
             mkdir('uploads', 0777, true);
         }
-        $filename = $_FILES['doc']['name'];
+        $filename = $_FILES['document']['name'];
         echo $filename;
 
 
