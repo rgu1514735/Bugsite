@@ -43,7 +43,7 @@ require_once "db.php";
                     echo 'window.location.href = "homepage.php";';
                     echo '</script>';
                 } else {
-                    echo "there is an error";
+                    echo "there is an error in file portion";
                 }
 
             } else {
@@ -78,7 +78,7 @@ require_once "db.php";
         }
         else
         {
-            echo "there is an error";
+            echo "there is an non file error";
         }
      }
 
