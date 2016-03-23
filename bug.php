@@ -26,6 +26,7 @@ require_once "db.php";
 
             $filename = $_FILES['document']['name'];
             $ext = pathinfo($filename, PATHINFO_EXTENSION);
+            echo $ext;
 
             if ($ext == "txt" || $ext == "JPG" || $ext == "PNG" || $ext == "jpg" || $ext == "png") {
                 $filename = $bugid;
