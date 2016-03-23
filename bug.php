@@ -3,7 +3,7 @@ session_start();
 require_once "db.php";
 
 
-    /*if($_POST['document']) {
+    if($_POST['document']) {
         $title = $_POST['title'];
         $description = $_POST['description'];
         $postdate = $_POST['postdate'];
@@ -25,14 +25,14 @@ require_once "db.php";
         echo $filename;
 
 
-        if ($_FILES['document']['size'] < $maximum_size) {
+
 
             $filename = $_FILES['document']['name'];
             $ext = pathinfo($filename, PATHINFO_EXTENSION);
             echo $ext;
 
 
-           /* if ($ext == "txt" || $ext == "JPG" || $ext == "PNG" || $ext == "jpg" || $ext == "png") {
+            /*if ($ext == "txt" || $ext == "JPG" || $ext == "PNG" || $ext == "jpg" || $ext == "png") {
                 //$filename = $bugid;
                 move_uploaded_file($_FILES['document']['tmp_name'], $upload_dir . '/' . $filename);
                 $sql = "insert into bug (title,description,userid,postdate,fixdate,fixed,bugid,username) values ('$title','$description','$userid','$postdate','$fixeddate','$fixed','$bugid','$username')";
@@ -51,15 +51,14 @@ require_once "db.php";
                 }
 
             } else {
-                /*echo '<script type="text/javascript">';
+                echo '<script type="text/javascript">';
                 echo 'alert("Invalid file type. Only text file accepted");';
                 echo 'window.location.href = "homepage.php";';
                 echo '</script>';
                 echo 'failed';
 
-            }
 
-        }
+            }*/
     }
    else
     {
@@ -85,29 +84,11 @@ require_once "db.php";
         {
             echo "there is an non file error";
         }
-     }*/
+     }
 
 
 
-    $filename = $_FILES['document']['name'];
-    $ext = pathinfo($filename, PATHINFO_EXTENSION);
-    echo $ext;
 
-    /*if ($ext == "txt" || $ext == "JPG" || $ext == "PNG"|| $ext == "jpg"|| $ext == "png") {
-        move_uploaded_file($_FILES['document']['tmp_name'], $upload_dir . '/' . $filename);
-        //echo $filename;
-        echo '<script type="text/javascript">';
-        echo 'alert("File Uploaded");';
-        echo 'window.location.href = "uploadfile.php";';
-        echo '</script>';
-
-    } else {
-        echo '<script type="text/javascript">';
-        echo 'alert("Invalid file type. Only text file accepted");';
-        echo 'window.location.href = "uploadfile.php";';
-        echo '</script>';
-
-    }*/
 
 
 
