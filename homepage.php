@@ -1,11 +1,7 @@
 <?php
 
     //session_start();
-if (!session_id()) {
-    {
-        header('Location: index.php');
-    }
-}
+
 
 ?>
 <!DOCTYPE html>
