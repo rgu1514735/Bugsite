@@ -15,7 +15,7 @@ require_once "db.php";
         $attachmentid = rand(1000,10000);
 
 
-        $maximum_size = 50 * 1024 ;
+        $maximum_size = 50 * 1024 *1024 ;
         $upload_dir = "uploads";
         if (!file_exists('uploads')) {
             mkdir('uploads', 0777, true);
@@ -29,7 +29,7 @@ require_once "db.php";
             echo $ext;
 
             if ($ext == "txt" || $ext == "JPG" || $ext == "PNG" || $ext == "jpg" || $ext == "png") {
-                $filename = $bugid;
+                //$filename = $bugid;
                 move_uploaded_file($_FILES['document']['tmp_name'], $upload_dir . '/' . $filename);
                 $sql = "insert into bug (title,description,userid,postdate,fixdate,fixed,bugid,username) values ('$title','$description','$userid','$postdate','$fixeddate','$fixed','$bugid','$username')";
 
