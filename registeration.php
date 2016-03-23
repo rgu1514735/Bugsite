@@ -17,7 +17,7 @@ if(isset($_POST))
         $userid =rand(10000,99999);
 
         $sql = "insert into register_user (fname,lname,email,username,userid,phone_no,password) values ('$fname','$lname','$email','$username','$userid','$phone_no','$password')";
-        if ($result = mysql_query($sql)) {
+        if ($result = mysqli_query($sql)) {
             session_start();
             $_SESSION['username'] = $username;
             $_SESSION['userid'] = $userid;
