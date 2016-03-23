@@ -33,7 +33,7 @@ if(isset($_POST))
     {
         echo '<script type="text/javascript">';
         echo 'alert("Username or Email already exists");';
-        echo 'window.location.href = "index.html";';
+        echo 'window.location.href = "index.php";';
         echo '</script>';
 
     }
