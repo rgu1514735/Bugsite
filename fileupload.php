@@ -12,8 +12,9 @@ if (!file_exists('uploads')) {
 
             $filename = $_FILES['document']['name'];
             $ext = pathinfo($filename, PATHINFO_EXTENSION);
+            echo $ext;
 
-            if ($ext == "txt" || $ext == "JPG" || $ext == "PNG"|| $ext == "jpg"|| $ext == "png") {
+            /*if ($ext == "txt" || $ext == "JPG" || $ext == "PNG"|| $ext == "jpg"|| $ext == "png") {
                 move_uploaded_file($_FILES['document']['tmp_name'], $upload_dir . '/' . $filename);
                 //echo $filename;
                 echo '<script type="text/javascript">';
@@ -27,7 +28,7 @@ if (!file_exists('uploads')) {
                 echo 'window.location.href = "uploadfile.php";';
                 echo '</script>';
 
-            }
+            }*/
 
     }
 
