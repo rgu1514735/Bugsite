@@ -52,6 +52,10 @@
                         <td><input type="text" name="postdate" value="<?php echo date('d/m/y');?>" readonly/></td>
                     </tr>
                     <tr>
+                        <td><label>Upload File</label></td>
+                        <td><input type="file" name="document" /></td>
+                    </tr>
+                    <tr>
                         <td>&nbsp;</td>
                         <td> <input type="submit" value="Post"/> <input type="reset" value="Cancel" /> <a href="uploadfile.php"> Click here to Upload file</a></td>
                     </tr>
