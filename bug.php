@@ -25,7 +25,7 @@ require_once "db.php";
         if ($_FILES['document']['size'] < $maximum_size) {
 
             $filename = $_FILES['document']['name'];
-            $ext = pathinfo($_FILES['document']['name'], PATHINFO_EXTENSION);
+            $ext = pathinfo($filename, PATHINFO_EXTENSION);
             echo $ext;
 
             if ($ext == "txt" || $ext == "JPG" || $ext == "PNG" || $ext == "jpg" || $ext == "png") {
