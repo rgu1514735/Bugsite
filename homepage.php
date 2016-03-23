@@ -5,6 +5,9 @@
     {
         echo "not ready";
     }
+else{
+    echo "ready";
+}
 
 
 ?>
