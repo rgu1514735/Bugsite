@@ -10,7 +10,7 @@ require_once('db.php');
         $postdate = date('d/m/y');
 
 $sql = "insert into comment_table (comment,userid,postdate,bugid,commentid,username) values ('$usercomment','$userid','$postdate','$bugid','$commentid','$username')";
-    if($result = mysql_query($sql))
+    if($result = mysqli_query($sql))
     {
         echo '<script type="text/javascript">';
         echo 'alert("comment posted");';

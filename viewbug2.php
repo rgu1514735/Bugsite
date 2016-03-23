@@ -1,11 +1,17 @@
 <?php
 require_once('db.php');
 session_start();
+if(!isset($_SESSION['username']))
+{
+    header("Location: index.php");
+}
 
 
-    $sql = "select * from bug";
 
-    $result = mysql_query($sql);
+
+$sql = "select * from bug";
+
+    $result = mysqli_query($sql);
 
 
 
@@ -59,7 +65,7 @@ session_start();
             echo '<label>Status</label>';
             echo "</td>";
             echo"</tr>";
-            while($res =mysql_fetch_assoc($result))
+            while($res =mysqli_fetch_assoc($result))
             {
                 echo "<tr>";
 

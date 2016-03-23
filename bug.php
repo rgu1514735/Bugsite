@@ -16,7 +16,7 @@ require_once "db.php";
 
 
         $sql = "insert into bug (title,description,userid,postdate,fixdate,fixed,bugid,username) values ('$title','$description','$userid','$postdate','$fixeddate','$fixed','$bugid','$username')";
-        if($result = mysql_query($sql)) {
+        if($result = mysqli_query($sql)) {
             echo '<script type="text/javascript">';
             echo 'alert("Bug is posted");';
             echo 'window.location.href = "homepage.php";';

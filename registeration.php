@@ -11,8 +11,8 @@ if(isset($_POST))
     $password = $_POST['password'];
 
     $check_user = "select * from register_user WHERE username = '$username' or email ='$email'";
-    $user_check =mysql_query($check_user);
-    if(mysql_fetch_array($user_check) < 1) {
+    $user_check =mysqli_query($check_user);
+    if(mysqli_fetch_array($user_check) < 1) {
 
         $userid =rand(10000,99999);
 

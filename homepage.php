@@ -5,9 +5,7 @@
     {
         header("Location: index.php");
     }
-else{
-    echo "ready";
-}
+
 
 
 ?>
