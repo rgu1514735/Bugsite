@@ -11,13 +11,13 @@ if(isset($_POST))
     $password = $_POST['password'];
 
     $check_user = "select * from register_user WHERE username = '$username' or email ='$email'";
-    $user_check =mysqli_query($check_user);
+    $user_check =mysql_query($check_user);
     if(mysqli_fetch_array($user_check) < 1) {
 
         $userid =rand(10000,99999);
 
         $sql = "insert into register_user (fname,lname,email,username,userid,phone_no,password) values ('$fname','$lname','$email','$username','$userid','$phone_no','$password')";
-        if ($result = mysqli_query($sql)) {
+        if ($result = mysql_query($sql)) {
             session_start();
             $_SESSION['username'] = $username;
             $_SESSION['userid'] = $userid;
