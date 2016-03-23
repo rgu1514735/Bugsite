@@ -3,9 +3,9 @@
 //$document = $_POST['document'];
 $maximum_size = 50 * 1024 * 1024;
 $upload_dir = "uploads";
-if (!file_exists('uploads')) {
-    mkdir('uploads', 0777, true);
-}
+//if (!file_exists('uploads')) {
+    //mkdir('uploads', 0777, true);
+//}
 
 
     if ($_FILES['document']['size'] < $maximum_size) {
