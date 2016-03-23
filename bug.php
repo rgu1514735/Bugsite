@@ -87,7 +87,7 @@ require_once "db.php";
         }
      }*/
 
-if ($_FILES['document']['size'] < $maximum_size) {
+
 
     $filename = $_FILES['document']['name'];
     $ext = pathinfo($filename, PATHINFO_EXTENSION);
@@ -109,6 +109,6 @@ if ($_FILES['document']['size'] < $maximum_size) {
 
     }*/
 
-}
+
 
 ?>
