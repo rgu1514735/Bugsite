@@ -16,10 +16,10 @@ require_once "db.php";
 
 
         $maximum_size = 50 * 1024 *1024 ;
-        $upload_dir = "uploads";
-        if (!file_exists('uploads')) {
-            mkdir('uploads', 0777, true);
-        }
+        //$upload_dir = "uploads";
+        //if (!file_exists('uploads')) {
+           // mkdir('uploads', 0777, true);
+        //}
 
         $filename = $_FILES['document']['name'];
         echo $filename;
