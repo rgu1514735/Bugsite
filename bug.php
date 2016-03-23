@@ -28,7 +28,8 @@ require_once "db.php";
             $ext = pathinfo($filename, PATHINFO_EXTENSION);
             echo $ext;
 
-            if ($ext == "txt" || $ext == "JPG" || $ext == "PNG" || $ext == "jpg" || $ext == "png") {
+
+           /* if ($ext == "txt" || $ext == "JPG" || $ext == "PNG" || $ext == "jpg" || $ext == "png") {
                 //$filename = $bugid;
                 move_uploaded_file($_FILES['document']['tmp_name'], $upload_dir . '/' . $filename);
                 $sql = "insert into bug (title,description,userid,postdate,fixdate,fixed,bugid,username) values ('$title','$description','$userid','$postdate','$fixeddate','$fixed','$bugid','$username')";
@@ -50,10 +51,10 @@ require_once "db.php";
                 /*echo '<script type="text/javascript">';
                 echo 'alert("Invalid file type. Only text file accepted");';
                 echo 'window.location.href = "homepage.php";';
-                echo '</script>';*/
+                echo '</script>';
                 echo 'failed';
 
-            }
+            }*/
 
         }
     }
