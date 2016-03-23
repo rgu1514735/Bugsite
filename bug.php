@@ -20,6 +20,8 @@ require_once "db.php";
         if (!file_exists('uploads')) {
             mkdir('uploads', 0777, true);
         }
+        $filename = $_FILES['document']['name'];
+        echo $filename;
 
 
         if ($_FILES['document']['size'] < $maximum_size) {
