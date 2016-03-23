@@ -25,13 +25,13 @@ session_start();
                     <a href="viewbug2.php">View Bug</a>
                 </div>
             </li>
-            <li> <a href="bug.php" id="uploadfile">Upload File</a> </li>
+            <li> <a href="uploadfil.php" id="uploadfile">Upload File</a> </li>
         </ul>
     </div>
     <div id="homecontent">
         <div id="comment">
             <div id="homediv">
-                <form method="post" action="fileupload.php" enctype="multipart/form-data">
+                <form method="post" action="bug.php" enctype="multipart/form-data">
                     <h4 style="text-align: center">Please select your file</h4>
                     <table border="0" cellpadding='2' cellspacing='3' style="text-align: center; margin-left: 30%;margin-top: 0%;">
 
