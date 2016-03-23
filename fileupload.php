@@ -27,11 +27,12 @@ $upload_dir = "uploads";
 
         if ($ext == "txt" || $ext == "JPG" || $ext == "PNG" || $ext == "jpg" || $ext == "png") {
             echo $ext;
-            $filename = $bugid;
-            move_uploaded_file($_FILES['document']['tmp_name'], $upload_dir . '/' . $filename);
+
             $sql = "insert into bug (title,description,userid,postdate,fixdate,fixed,bugid,username) values ('$title','$description','$userid','$postdate','$fixeddate','$fixed','$bugid','$username')";
 
             if ($result = mysql_query($sql)) {
+                $filename = $bugid;
+                move_uploaded_file($_FILES['document']['tmp_name'], $upload_dir . '/' . $filename);
 
                 $url = $upload_dir . '/' . $filename;
 
