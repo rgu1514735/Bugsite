@@ -53,7 +53,7 @@
                     </tr>
                     <tr>
                         <td><label>Upload File</label></td>
-                        <td><input type="file" name="document" style="width: 250px; background-color: white;"/></td>
+                        <td><input type="file" name="doc" style="width: 250px; background-color: white;"/></td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
