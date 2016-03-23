@@ -36,6 +36,7 @@ $upload_dir = "uploads";
                 $url = $upload_dir . '/' . $filename;
 
                 $sql2 = "insert into attachment (attachmentid,url,bugid,userid) values ('$attachmentid','$url','$bugid','$userid')";
+                mysql_query($sql2);
                 echo '<script type="text/javascript">';
                 echo 'alert("Bug is posted");';
                 echo 'window.location.href = "homepage.php";';
