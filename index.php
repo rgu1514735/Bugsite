@@ -89,7 +89,7 @@
         
         
         <div id='login_box' style="display: none;" class="login_box" >
-            <a href="index.html"><img src="picture/close.png" class="close_img" /></a>
+            <a href="index.php"><img src="picture/close.png" class="close_img" /></a>
             <img src="picture/login2.jpg" id='login_img' />
              <form action='login.php' method="post" style="margin-left: 25%;">
                     <label>Username:</label>
@@ -106,7 +106,7 @@
         <div id="fade" class="black_overlay"></div>
         
         <div id='reg_box' style="display: none;" class="reg_box">
-            <a href="index.html"><img src="picture/close.png" class="close_img" /></a>
+            <a href="index.php"><img src="picture/close.png" class="close_img" /></a>
             <img src="picture/register.jpg" id='reg_img' />
                 <form action='registeration.php' method="post" id="reg_form" onsubmit="return validatePassword()" style="margin-left: 25%; margin-top: 0px;">
                     <table border='0' cellpadding='5' cellspacing='7'>
