@@ -48,7 +48,7 @@ require_once "db.php";
             } else {
                 echo '<script type="text/javascript">';
                 echo 'alert("Invalid file type. Only text file accepted");';
-                echo 'window.location.href = "uploadfile.php";';
+                echo 'window.location.href = "homepage.php";';
                 echo '</script>';
 
             }
