@@ -10,7 +10,18 @@ $upload_dir = "uploads";
 
     if ($_FILES['document']['size'] < $maximum_size) {
 
-            $filename = $_FILES['document']['name'];
+        $title = $_POST['title'];
+        $description = $_POST['description'];
+        $postdate = $_POST['postdate'];
+        $userid = $_SESSION['userid'];
+        $username = $_SESSION['username'];
+        $fixeddate = '';
+        $fixed = 0;
+        $bugid = rand(1000, 10000);
+        $attachmentid = rand(1000,10000);
+
+
+        $filename = $_FILES['document']['name'];
             $ext = pathinfo($filename, PATHINFO_EXTENSION);
             echo $ext;
 
