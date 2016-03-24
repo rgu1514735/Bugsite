@@ -16,6 +16,10 @@ if($_POST['fix'] = 'fixed')
 else {
     echo 'not fixed';
 }
+
+
+
+
 /*$sql = "insert into comment_table (comment,userid,postdate,bugid,commentid,username) values ('$usercomment','$userid','$postdate','$bugid','$commentid','$username')";
 if($result = mysqli_query($sql))
 {
