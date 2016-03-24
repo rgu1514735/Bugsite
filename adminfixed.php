@@ -11,7 +11,7 @@ $fixed = $_POST['fix'];
 
 if($_POST['fix'] = 'fixed')
 {
-    echo 'fixed';
+    echo 'not fixed';
 }
 else {
     echo 'not fixed';
