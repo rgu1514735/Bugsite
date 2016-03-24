@@ -25,7 +25,7 @@ if(isset($_POST))
         $_SESSION['userid'] = $row['userid'];
         if($username=='superadmin')
         {
-            header("location: adminviewbug.php");
+            header("location: admin/adminviewbug.php");
         }
         else{
             header("location: homepage.php");
