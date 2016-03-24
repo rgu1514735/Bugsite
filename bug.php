@@ -33,12 +33,18 @@ require_once "db.php";
                 move_uploaded_file($_FILES['document']['tmp_name'], $upload_dir . '/' . $filename);
                 //echo $filename;
                 $url = $upload_dir . '/' . $filename;
-                echo $url;
 
-                /*echo '<script type="text/javascript">';
-                echo 'alert("Bug is posted");';
-                echo 'window.location.href = "homepage.php";';
-                echo '</script>';*/
+                $sql2 = "insert into attachment(attachmentid,url,bugid,userid) values ('$attachmentid','$url','$bugid','$userid')";
+                if(mysql_query($sql2))
+                {
+                    echo '<script type="text/javascript">';
+                    echo 'alert("Bug is posted");';
+                    echo 'window.location.href = "homepage.php";';
+                    echo '</script>';
+                }
+
+
+                /**/
             } else {
                 echo "there is an error";
             }
