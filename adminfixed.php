@@ -9,7 +9,7 @@ $commentid = rand(100000,999999);
 $postdate = date('d/m/y');
 $fixed = $_POST['fix'];
 
-if($_POST['fix'] = 'fixed')
+if($_POST['fix'] == 'fixed')
 {
     echo 'fixed';
 }
