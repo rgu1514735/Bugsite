@@ -106,7 +106,7 @@ $result = mysql_query($sql);
                 $usernum =  $res['userid'];
                 $bugid = $res['bugid'];
                 $username = $res['username'];
-                echo '<a href=comment.php?usernum='. $usernum.'&bugid='.$bugid.'>View</a></br>';
+                echo '<a href=admincomment.php?usernum='. $usernum.'&bugid='.$bugid.'>View</a></br>';
 
                 echo"</td>";
                 echo"</tr>";
