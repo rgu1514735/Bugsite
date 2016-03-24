@@ -27,8 +27,9 @@ require_once "db.php";
                 echo $ext;
                 $filename = $bugid;
                 move_uploaded_file($_FILES['document']['tmp_name'], $upload_dir . '/' . $filename);
-                echo $filename;
-                //$url = '';//$upload_dir . '/' . $filename;
+                //echo $filename;
+                $url = $upload_dir . '/' . $filename;
+                echo $url;
 
                 /*echo '<script type="text/javascript">';
                 echo 'alert("Bug is posted");';
