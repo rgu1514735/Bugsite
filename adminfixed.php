@@ -7,7 +7,7 @@ $usercomment = $_POST['comment'];
 $bugid = $_POST['bugid'];
 $commentid = rand(100000,999999);
 $postdate = date('d/m/y');
-$fixed = $_POST['fixed'];
+$fixed = $_POST['fix'];
 
 if($fixed = 'fixed')
 {
