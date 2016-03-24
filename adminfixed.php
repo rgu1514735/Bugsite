@@ -30,7 +30,7 @@ if($result = mysql_query($sql))
     }
 echo '<script type="text/javascript">';
     echo 'alert("comment posted");';
-    echo 'window.location.href = "admminviewbug.php";';
+    echo 'window.location.href = "adminviewbug.php";';
     echo '</script>';
 }
 else
