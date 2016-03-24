@@ -23,9 +23,9 @@ $res = mysql_query($sql2);
 <html lang="en" xmlns:width="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
-    <script type="text/javascript" src="jquery/jquery-2.1.0.js"></script>
+    <script type="text/javascript" src="../jquery/jquery-2.1.0.js"></script>
     <title>View Comment</title>
-    <link rel="stylesheet" type="text/css" href="main.css";>
+    <link rel="stylesheet" type="text/css" href="../main.css";>
 
 
 </head>
@@ -36,14 +36,14 @@ $res = mysql_query($sql2);
     </div>
     <div id="navbar">
         <ul>
-            <li> <a href="homepage.php" id="homeref">Home</a> </li>
+            <li> <a href="../homepage.php" id="homeref">Home</a> </li>
             <li class="view"> <a href="#" id="view">View</a>
                 <div class="dropdown">
 
-                    <a href="viewbug2.php">View Bug</a>
+                    <a href="../viewbug2.php">View Bug</a>
                 </div>
             </li>
-            <li> <a href="logout.php">Logout</a></li>
+            <li> <a href="../logout.php">Logout</a></li>
         </ul>
     </div>
     <div id="homecontent">
