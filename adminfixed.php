@@ -9,7 +9,14 @@ $commentid = rand(100000,999999);
 $postdate = date('d/m/y');
 $fixed = $_POST['fixed'];
 
-$sql = "insert into comment_table (comment,userid,postdate,bugid,commentid,username) values ('$usercomment','$userid','$postdate','$bugid','$commentid','$username')";
+if($fixed = 'fixed')
+{
+    echo $fixed;
+}
+else {
+    echo $fixed;
+}
+/*$sql = "insert into comment_table (comment,userid,postdate,bugid,commentid,username) values ('$usercomment','$userid','$postdate','$bugid','$commentid','$username')";
 if($result = mysqli_query($sql))
 {
     if($fixed = 'fixed')
@@ -20,10 +27,10 @@ if($result = mysqli_query($sql))
     {
         echo $fixed;
     }
-/*echo '<script type="text/javascript">';
+echo '<script type="text/javascript">';
     echo 'alert("comment posted");';
     echo 'window.location.href = "viewbug2.php";';
-    echo '</script>';*/
+    echo '</script>';
 }
 else
 {
@@ -31,6 +38,6 @@ echo '<script type="text/javascript">';
     echo 'alert("i didnt work o");';
     echo 'window.location.href = "viewbug2.php";';
     echo '</script>';
-}
+}*/
 
 ?>
