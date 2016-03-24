@@ -24,10 +24,16 @@ require_once "db.php";
             $sql = "insert into bug (title,description,userid,postdate,fixdate,fixed,bugid,username) values ('$title','$description','$userid','$postdate','$fixeddate','$fixed','$bugid','$username')";
             if ($result = mysql_query($sql)) {
 
-                echo '<script type="text/javascript">';
+                echo $ext;
+                $filename = $bugid;
+                move_uploaded_file($_FILES['document']['tmp_name'], $upload_dir . '/' . $filename);
+                echo $filename;
+                //$url = '';//$upload_dir . '/' . $filename;
+
+                /*echo '<script type="text/javascript">';
                 echo 'alert("Bug is posted");';
                 echo 'window.location.href = "homepage.php";';
-                echo '</script>';
+                echo '</script>';*/
             } else {
                 echo "there is an error";
             }
