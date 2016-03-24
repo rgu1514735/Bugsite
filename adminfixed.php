@@ -19,7 +19,11 @@ if($result = mysqli_query($sql))
 {
     if($_POST['fix'] == 'fixed')
     {
+        $sql2 = "update bug set fixed = 1 where bugid = '$bugid'";
+        if(mysql_query($sql2))
+        {
         echo 'fixed';
+        }
     }
     else {
         echo 'not fixed';
