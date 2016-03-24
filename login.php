@@ -23,7 +23,14 @@ if(isset($_POST))
         $row = mysql_fetch_assoc($result);
         $_SESSION['username'] = $row['username'];
         $_SESSION['userid'] = $row['userid'];
-        header("location: homepage.php");
+        if($username=='superadmin')
+        {
+            header("location: adminviewbug.php");
+        }
+        else{
+            header("location: homepage.php");
+        }
+
 
     }
     else{
