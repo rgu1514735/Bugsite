@@ -14,8 +14,8 @@ $userid = $_GET['usernum'];
 $sql = "select * from bug where bugid = '$bugid' and userid = '$userid'";
 $sql2 = "select * from comment_table where bugid = '$bugid'";
 
-$result = mysqli_query($sql);
-$res = mysqli_query($sql2);
+$result = mysql_query($sql);
+$res = mysql_query($sql2);
 
 ?>
 
@@ -52,12 +52,12 @@ $res = mysqli_query($sql2);
                 <div id="commentsection">
                     <fieldset>
                         <h3 style="font-size: x-large; margin-bottom: 0%;">Title</h3>
-                        <p style="font-size: large; font-style: italic; color: darkblue; margin-top: 0%;"><?php $row = mysqli_fetch_assoc($result); echo $row['title'];?> </p>
+                        <p style="font-size: large; font-style: italic; color: darkblue; margin-top: 0%;"><?php $row = mysql_fetch_assoc($result); echo $row['title'];?> </p>
                         <h3 style="font-size: x-large; margin-bottom: 0%; margin-top: 0%;">Description</h3>
                        <p style="font-size: large; color: #666666; margin-top: 0%;"><?php  echo $row['description'];?></p>
                         <?php
 
-                        while($commentrow = mysqli_fetch_assoc($res)){
+                        while($commentrow = mysql_fetch_assoc($res)){
                             if($commentrow['bugid'] == '') {
                                 echo '<p>No comment </p>';
                             }

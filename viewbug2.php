@@ -11,7 +11,7 @@ if(!isset($_SESSION['username']))
 
 $sql = "select * from bug";
 
-    $result = mysqli_query($sql);
+    $result = mysql_query($sql);
 
 
 
@@ -65,7 +65,7 @@ $sql = "select * from bug";
             echo '<label>Status</label>';
             echo "</td>";
             echo"</tr>";
-            while($res =mysqli_fetch_assoc($result))
+            while($res =mysql_fetch_assoc($result))
             {
                 echo "<tr>";
 
