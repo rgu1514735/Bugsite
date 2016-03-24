@@ -1,6 +1,6 @@
 <?php
 
-if($_POST['fix']== 'fixed')
+if($_POST['fix'] == 'fixed')
 {
     echo 'fixed';
 }
