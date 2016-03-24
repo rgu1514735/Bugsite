@@ -22,7 +22,7 @@ if($result = mysql_query($sql))
         $sql2 = "update bug set fixed = 1 where bugid = '$bugid'";
         if(mysql_query($sql2))
         {
-        echo 'fixed';
+        //echo 'fixed';
         }
     }
     else {
