@@ -43,7 +43,7 @@ $res = mysql_query($sql2);
                     <a href="viewbug2.php">View Bug</a>
                 </div>
             </li>
-            <li> <a href="uploadfile.php" id="uploadfile">Upload File</a> </li>
+            <li> <a href="logout.php">Logout</a></li>
         </ul>
     </div>
     <div id="homecontent">

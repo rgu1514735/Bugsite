@@ -29,7 +29,7 @@
                     <a href="viewbug2.php">View Bug</a>
                 </div>
             </li>
-            <li> <a href="uploadfile.php" id="uploadfile">Upload File</a> </li>
+
             <li> <a href="logout.php">Logout</a></li>
         </ul>
     </div>
@@ -57,7 +57,7 @@
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
-                        <td> <input type="submit" value="Post"/> <input type="reset" value="Cancel" /> <a href="uploadfile.php"> Click here to Upload file</a></td>
+                        <td> <input type="submit" value="Post"/> <input type="reset" value="Cancel" /> </td>
                     </tr>
                 </table>
                    </form>
