@@ -12,6 +12,10 @@ require_once "db.php";
         $fixed = 0;
         $bugid = rand(1000, 10000);
         $attachmentid = rand(1000, 10000);
+        $upload_dir = "uploads";
+        if (!file_exists('uploads')) {
+            mkdir('uploads', 0777, true);
+            }
 
 
         $filename = $_FILES['document']['name'];
