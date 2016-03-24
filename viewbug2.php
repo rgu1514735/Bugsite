@@ -101,13 +101,13 @@ $sql = "select * from bug";
                     }
 
 
-                //$bugid = $res['bugid'];
+
                     echo "<td>";
                 $usernum =  $res['userid'];
                 $bugid = $res['bugid'];
                 $username = $res['username'];
                 echo '<a href=comment.php?usernum='. $usernum.'&bugid='.$bugid.'>View Comment</a></br>';
-              // echo '<a href="bug.php?bugID="'. $bugID.'>'.$bugTitle.'</a></br>';
+
                     echo"</td>";
                 echo"</tr>";
 

@@ -12,7 +12,7 @@ if(isset($_POST))
     $password = stripslashes($password);
     $username = mysqli_real_escape_string($db,$username);
     $password = mysqli_real_escape_string($db,$password);
-    $password = md5($password);
+    //$password = md5($password);
 
 
     $sql = "select * from register_user where username = '$username' and password = '$password'";
