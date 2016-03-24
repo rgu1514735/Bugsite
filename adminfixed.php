@@ -15,7 +15,7 @@ $fixed = $_POST['fix'];
 
 
 $sql = "insert into comment_table (comment,userid,postdate,bugid,commentid,username) values ('$usercomment','$userid','$postdate','$bugid','$commentid','$username')";
-if($result = mysqli_query($sql))
+if($result = mysql_query($sql))
 {
     if($_POST['fix'] == 'fixed')
     {
@@ -37,7 +37,7 @@ else
 {
 echo '<script type="text/javascript">';
     echo 'alert("i didnt work o");';
-    echo 'window.location.href = "viewbug2.php";';
+    echo 'window.location.href = "adminviewbug.php";';
     echo '</script>';
 }
 
