@@ -36,7 +36,7 @@ $res = mysql_query($sql2);
     </div>
     <div id="navbar">
         <ul>
-            <li> <a href="../homepage.php" id="homeref">Home</a> </li>
+
             <li class="view"> <a href="#" id="view">View</a>
                 <div class="dropdown">
 
