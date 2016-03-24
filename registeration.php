@@ -10,6 +10,15 @@ if(isset($_POST))
     $phone_no = $_POST['phone_no'];
     $password = $_POST['password'];
 
+    $fname = stripslashes($fname);
+    $lname = stripslashes($lname);
+    $email = stripslashes($email);
+    $username = stripslashes($username);
+    $phone_no = stripslashes($phone_no);
+    $password = stripslashes($password);
+
+    $password = md5($password);
+
     $check_user = "select * from register_user WHERE username = '$username' or email ='$email'";
     $user_check =mysql_query($check_user);
     if(mysqli_fetch_array($user_check) < 1) {
@@ -25,7 +34,7 @@ if(isset($_POST))
             echo 'alert("Registration completed");';
             echo 'window.location.href = "homepage.php";';
             echo '</script>';
-            //header("location: homepage.php");
+
         }
 
     }
