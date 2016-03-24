@@ -80,7 +80,7 @@ $res = mysql_query($sql2);
                         ?>
                         <form method="post" action="adminfixed.php">
                             <textarea rows="2" cols="89" name="comment" style="margin-top: 10px;"></textarea>
-                            <label>Fixed</label><input type="radio" name="fix" value="fixed"/><label>Not Fixed</label><input type="radio" name="fix" value="notfixed"/>
+                            <label>Fixed</label> <input type="radio" name="fix" value="fixed"/> <input type="radio" name="fix" value="notfixed"/>
                             <input type="submit" value="Post"/> <input type="reset" value="Cancel" />
 
                             <input type="text" value="<?php echo $bugid;?>" name="bugid" style="display: none;"/>
