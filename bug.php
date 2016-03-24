@@ -2,7 +2,7 @@
 session_start();
 require_once "db.php";
 
-    if(isset($_FILES['document']['name'])) {
+    if(!$_FILES['document']['name'] == '') {
         $title = $_POST['title'];
         $description = $_POST['description'];
         $postdate = $_POST['postdate'];
