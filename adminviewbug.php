@@ -20,9 +20,9 @@ $result = mysql_query($sql);
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <script type="text/javascript" src="../jquery/jquery-2.1.0.js"></script>
+    <script type="text/javascript" src="jquery/jquery-2.1.0.js"></script>
     <title>View Comment</title>
-    <link rel="stylesheet" type="text/css" href="../main.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
 
 
 </head>
@@ -36,10 +36,10 @@ $result = mysql_query($sql);
 
             <li class="view"> <a href="#" id="view">View</a>
                 <div class="dropdown">
-                    <a href="../viewbug2.php">View Bug</a>
+                    <a href="viewbug2.php">View Bug</a>
                 </div>
             </li>
-            <li> <a href="../logout.php">Logout</a></li>
+            <li> <a href="logout.php">Logout</a></li>
         </ul>
     </div>
     <div id="homecontent">
