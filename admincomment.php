@@ -1,11 +1,10 @@
 <?php
 require_once("db.php");
 session_start();
-if(!isset($_SESSION['username']))
+if(!$_SESSION['username'] == 'superadmin')
 {
     header("Location: index.php");
 }
-
 
 $userid = $_GET['usernum'];
 $bugid = $_GET['bugid'];
