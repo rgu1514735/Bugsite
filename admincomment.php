@@ -1,9 +1,12 @@
 <?php
 require_once("db.php");
 session_start();
-if(!$_SESSION['username'] == 'superadmin')
+if(!($_SESSION['username'] == 'superadmin'))
 {
-    header("Location: index.php");
+    echo '<script type="text/javascript">';
+    echo 'alert("Only Admin users can view this page");';
+    echo 'window.location.href = "index.php";';
+    echo '</script>';
 }
 
 $userid = $_GET['usernum'];
