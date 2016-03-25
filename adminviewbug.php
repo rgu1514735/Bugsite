@@ -1,7 +1,7 @@
 <?php
 require_once('db.php');
 session_start();
-if(!$_SESSION['username'] == 'superadmin')
+if(!($_SESSION['username'] == 'superadmin'))
 {
     header("Location: index.php");
 }
