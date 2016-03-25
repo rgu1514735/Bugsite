@@ -19,7 +19,7 @@ if($result = mysql_query($sql))
         $sql2 = "update bug set fixed = 1 where bugid = '$bugid'";
         if(mysql_query($sql2))
         {
-        echo 'fixed';
+        //echo 'fixed';
         }
     }
     else {
@@ -33,7 +33,7 @@ if($result = mysql_query($sql))
 else
 {
     echo '<script type="text/javascript">';
-    echo 'alert("i didnt work o");';
+    echo 'alert("You did not select the fixed status");';
     echo 'window.location.href = "adminviewbug.php";';
     echo '</script>';
 }

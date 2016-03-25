@@ -83,7 +83,7 @@ $res = mysql_query($sql2);
                         <form method="post" action="adminfixed.php">
                              <textarea rows="2" cols="89" name="comment" style="margin-top: 10px;"></textarea>
                             <label>Fixed</label>
-                            <select name="fix">
+                            <select name="fix" required>
                                 <option value="fixed">Fixed</option>
                                 <option value="not fixed">Not Fixed</option>
                             </select>
