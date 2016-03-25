@@ -36,7 +36,7 @@ $result = mysql_query($sql);
 
             <li class="view"> <a href="#" id="view">View</a>
                 <div class="dropdown">
-                    <a href="viewbug2.php">View Bug</a>
+                    <a href="adminviewbug.php.php">View Bug</a>
                 </div>
             </li>
             <li> <a href="logout.php">Logout</a></li>
