@@ -17,7 +17,7 @@ if(isset($_POST))
     $phone_no = stripslashes($phone_no);
     $password = stripslashes($password);
 
-    //$password = md5($password);
+    $password = md5($password);
 
     $check_user = "select * from register_user WHERE username = '$username' or email ='$email'";
     $user_check =mysql_query($check_user);
