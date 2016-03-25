@@ -31,7 +31,7 @@
             </li>
 
             <li> <a href="logout.php">Logout</a></li>
-            <li style="float: right; margin-top: 2%;"> Welcome <?php echo $_SESSION['username']; ?></li>
+            <li style="float: right; margin-top: 1%;"> Welcome <?php echo $_SESSION['username']; ?></li>
         </ul>
     </div>
     <div id="homecontent">
